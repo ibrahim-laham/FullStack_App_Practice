@@ -19,7 +19,7 @@ Step 3: yarn start
 ### Requirements
 
 1. create a server in the `api` folder
-2. display product list in `App.tsx`
+2. display product list in `App.tsx`
 
 ### Extra requirements
 
