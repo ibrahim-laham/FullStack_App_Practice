@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getProducts } from "./redux/thunk/products";
 import { RootState, AppDispatch } from "./redux/store";
+import Form from "./components/Form/Form";
 
 function App() {
   const appDisptach = useDispatch<AppDispatch>();
@@ -23,6 +24,7 @@ function App() {
           <li key={product.id}>{product.title} </li>
         ))}
       </ul>
+      <Form/>
     </div>
   );
 }

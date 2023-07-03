@@ -8,7 +8,6 @@ export function getProducts() {
   return (dispatch: AppDispatch) => {
     axios
       .get(url)
-      .then((res) => res)
       .then((data) => dispatch(productsActions.getProducts(data.data)))
       .catch((error) => console.log(error));
   };
