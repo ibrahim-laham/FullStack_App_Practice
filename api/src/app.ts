@@ -13,6 +13,7 @@ app.use(cors());
 
 app.use("/products", productsRouter);
 app.use("/users", usersRouter);
+app.use(Express.static("api"));
 
 const port = 8000;
 
